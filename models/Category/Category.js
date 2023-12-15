@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 //create schema
-const categorySchema = new mongoose.Schema({
+const categorisSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Post"
@@ -16,5 +16,5 @@ const categorySchema = new mongoose.Schema({
 }
 );
 
-const Category = mongoose.model('Category', categorySchema);
-module.exports = Category;
+const Categories = mongoose.model('Categories', categorisSchema);
+module.exports = Categories;
